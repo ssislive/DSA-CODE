@@ -1,11 +1,12 @@
-public class queue {
 
-    class queuenode{
-        int size;
-        int f;
-        int r;
-        int arr[];
-    }
+
+class queuenode{
+    int size;
+    int f;
+    int r;
+    int arr[];
+}
+public class queue {
 
     public static void enqueue(queuenode node,int val){
         if(node.r==node.size-1){
@@ -29,14 +30,14 @@ public class queue {
         }
     } 
     public static void main(String [] args){
-        queue q=new queue();
-        queuenode node=q.new queuenode();
-        node.size=10;
-        node.f=-1;
-        node.r=-1;
-        node.arr=new int[node.size];
-        enqueue(node,10);
-        enqueue(node,20);
-        dequeue(node);
+        queuenode q=new queuenode();
+
+        q.size=10;
+        q.f=-1;
+        q.r=-1;
+        q.arr=new int[q.size];
+        enqueue(q,10);
+        enqueue(q,20);
+        dequeue(q);
     }
 }

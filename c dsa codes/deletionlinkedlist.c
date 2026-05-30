@@ -22,7 +22,6 @@ int deleteatindex(struct node* head,int index){
         p=p->Next;
         i++;
     }
-    q=p->Next;
     p->Next=q->Next;
     free(q);
     return head;
@@ -103,7 +102,7 @@ int main(){
     fourth->data=44;
     fourth->Next=NULL;
 
-    head=deleteatend(head);
+    head=deleteatindex(head ,2);
 
     printf("After deletion at end:\n");
 
